@@ -1,0 +1,100 @@
+@import "../../styles/variables.scss";
+
+.sidebar {
+  position: fixed;
+  width: 320px;
+  right: -320px;
+  height: 100vh;
+  background-color: rgba($color: $black-dark, $alpha: 0.3);
+  backdrop-filter: blur(32px);
+  z-index: 100;
+  transition: 0.3s;
+  padding: 64px 32px 32px;
+  align-items: center;
+
+  @media (max-width: 425px) {
+    width: 100%;
+    right: -100%;
+  }
+
+  & > img {
+    width: 64px;
+    height: auto;
+    height: intrisic;
+  }
+
+  & > h3 {
+    color: $blue;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &-anchors {
+    width: 100%;
+    margin-top: 32px;
+    row-gap: 16px;
+
+    & > span {
+      align-items: center;
+      cursor: pointer;
+
+      & > a {
+        color: rgba($color: $green, $alpha: 0.6);
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        transition: 0.3s;
+      }
+
+      &:hover {
+        & > a {
+          color: $blue;
+        }
+
+        &::before {
+          content: "";
+          width: 6px;
+          height: 6px;
+          background-color: $white;
+          border-radius: 50%;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  &-links {
+    margin-top: 64px;
+    column-gap: 24px;
+
+    & > a {
+      color: rgba($color: $green, $alpha: 0.6);
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $blue;
+      }
+
+      & > svg {
+        width: 100%;
+        height: auto;
+        height: intrinsic;
+      }
+    }
+  }
+}
+
+.show {
+  right: 0px;
+}
+
+.sidebar-anchors-active {
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: $blue !important;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+}

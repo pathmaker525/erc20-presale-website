@@ -51,7 +51,7 @@ const DashboardComponent = () => (
         <h2 className="flex">Video presentation</h2>
         <div className="dashboard-presentation-introduce grid">
           <div className="dashboard-presentation-introduce-video rounded flex shadowed">
-            <img src={IntroduceVideo} alt="introduce video" />
+            <img src={IntroduceVideo} alt="introduce video" loading="lazy" />
           </div>
           <div className="dashboard-presentation-introduce-detail">
             <h3>#Number 1 in Tokens investment in AFRICA</h3>

@@ -6,11 +6,11 @@ import { AppRoutes } from "configs/UI"
 
 import "./style.scss"
 
-const Navbar = () => (
+const Navbar = ({ onClickSideBar }) => (
   <div className="navbar flex">
     <div className="navbar-wrapper container-big flex">
       <div className="navbar-logo flex">
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" loading="lazy" />
         <span>TUMA</span>
       </div>
       <div className="navbar-anchors flex">
@@ -30,7 +30,7 @@ const Navbar = () => (
           <NavLink to={AppRoutes.DASHBOARD}>Contacts</NavLink>
         </span>
       </div>
-      <button className="flex">
+      <button className="flex" onClick={onClickSideBar}>
         <IoEllipsisVertical />
       </button>
     </div>

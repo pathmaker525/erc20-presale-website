@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  justify-content: center;
+  align-items: flex-end;
+  backdrop-filter: blur(32px);
+
+  &-wrapper {
+    align-items: center;
+
+    & > span {
+      width: 160px;
+      color: $white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  &-anchors {
+    column-gap: 24px;
+
+    & > span {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        &::after {
+          position: absolute;
+          content: " ";
+          top: 100%;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background-color: $white;
+        }
+      }
+
+      & > a {
+        margin: 4px 0;
+        color: $blue;
+        text-decoration: none;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+      }
+    }
+
+    &-active {
+      &::after {
+        position: absolute;
+        content: " ";
+        top: 100%;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $blue;
+      }
+    }
+  }
+}

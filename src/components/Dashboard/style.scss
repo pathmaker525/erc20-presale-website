@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.dashboard {
+  width: 100%;
+  justify-content: center;
+
+  &-wrapper {
+    & > span {
+      color: $white;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}

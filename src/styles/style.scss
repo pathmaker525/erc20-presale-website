@@ -75,6 +75,11 @@ body {
 
 .rounded {
   border-radius: 6px;
+  overflow: hidden;
+}
+
+.shadowed {
+  box-shadow: 0 0 6px 1px rgba($color: $black-dark, $alpha: 0.6);
 }
 
 button {

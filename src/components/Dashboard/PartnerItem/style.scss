@@ -1,0 +1,21 @@
+@import "../../../styles/variables.scss";
+
+.partner-item {
+  text-decoration: none;
+
+  & > img {
+    width: 100%;
+  }
+
+  & > h4 {
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    margin: 4px 0;
+  }
+
+  & > span {
+    color: $gray;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+  }
+}

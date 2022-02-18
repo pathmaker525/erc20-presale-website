@@ -5,12 +5,12 @@ import "./style.scss"
 const Footer = () => (
   <div className="footer flex">
     <div className="footer-wrapper container flex-column">
-      <div className="footer-community flex rounded">
+      <div className="footer-community flex rounded shadowed">
         <div className="flex-column">
           <span>Join TUMA Community</span>
           <p>Follow us in all major social networks around the world</p>
         </div>
-        <button className="rounded">create account</button>
+        <button className="rounded shadowed">create account</button>
       </div>
 
       <div className="footer-main grid">

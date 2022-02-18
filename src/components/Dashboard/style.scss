@@ -6,9 +6,251 @@
   justify-content: center;
 
   &-wrapper {
+    width: 100%;
+    align-items: center;
+
     & > span {
       color: $white;
       font-family: "Montserrat", sans-serif;
+    }
+
+    & > div {
+      padding: 32px 0 64px;
+
+      @media (max-wdith: 425px) {
+        padding: 32px 0;
+      }
+
+      &:first-of-type {
+        padding: 0;
+      }
+
+      &:last-of-type {
+        padding: 32px 0 48px;
+      }
+
+      & h2 {
+        color: $white;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+
+        &::before {
+          content: "";
+          width: 24px;
+          min-width: 24px;
+          height: 4px;
+          background-image: linear-gradient(90deg, $blue, $black);
+          border-radius: 2px;
+          margin-right: 8px;
+          z-index: 1;
+        }
+      }
+
+      & h3 {
+        color: $white;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+      }
+    }
+  }
+
+  &-ico {
+    &-status {
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 32px;
+      row-gap: 24px;
+
+      @media (max-width: 768px) {
+        flex-direction: column !important;
+        align-items: flex-end;
+      }
+
+      &-wrapper {
+        width: 100%;
+        grid-template: auto / 1fr 1fr 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+
+        @media (max-width: 425px) {
+          grid-template: auto / 1fr 1fr;
+        }
+      }
+
+      &-item {
+        width: 100%;
+
+        & > span {
+          color: $gray;
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+        }
+      }
+
+      & > a {
+        min-width: 112px;
+        border: none;
+        padding: 10px 16px;
+        color: $black;
+        background-color: $blue;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &-presentation {
+    &-introduce {
+      grid-template: auto / 1fr 1fr;
+      grid-column-gap: 128px;
+      grid-row-gap: 24px;
+      align-items: flex-start;
+
+      @media (max-width: 768px) {
+        grid-template: auto / 1fr;
+      }
+
+      &-video {
+        width: 100%;
+
+        & > img {
+          width: 100%;
+        }
+      }
+
+      &-detail {
+        width: 100%;
+
+        & > h3 {
+          font-size: 40px;
+
+          @media (max-width: 1024px) {
+            font-size: 30px;
+          }
+        }
+
+        & > p {
+          color: $gray;
+          font-family: "Open Sans", sans-serif;
+          font-size: 20px;
+
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &-about {
+      margin-top: 128px;
+      grid-template: auto / 1fr 1fr 1fr;
+      grid-column-gap: 24px;
+      grid-row-gap: 16px;
+      padding: 24px;
+      background-color: rgba($color: $black-dark, $alpha: 0.3);
+
+      @media (max-width: 1024px) {
+        grid-template: auto / 1fr 1fr;
+      }
+
+      @media (max-width: 425px) {
+        margin-top: 32px;
+        grid-template: auto / 1fr;
+      }
+    }
+  }
+
+  &-roadmap {
+  }
+
+  &-documentation {
+    &-wrapper {
+      width: 100%;
+
+      & > h3 {
+        margin: 16px 0 !important;
+      }
+
+      & > button {
+        border: none;
+        padding: 10px 16px;
+        color: $black;
+        background-color: $blue;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &-team {
+    grid-template: auto / 60% 1fr;
+    grid-column-gap: 32px;
+    grid-row-gap: 24px;
+
+    @media (max-width: 1024px) {
+      grid-template: auto / 1fr;
+    }
+
+    &-founders {
+      width: 100%;
+
+      &-wrapper {
+        grid-template: auto / 1fr 1fr;
+        grid-column-gap: 24px;
+        grid-row-gap: 16px;
+
+        @media (max-width: 425px) {
+          grid-column-gap: 16px;
+          grid-row-gap: 8px;
+        }
+      }
+    }
+
+    &-hire {
+      width: 100%;
+
+      &-wrapper {
+      }
+    }
+  }
+
+  &-partners {
+    &-wrapper {
+      width: 100%;
+      grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 24px;
+      grid-row-gap: 16px;
+
+      @media (max-width: 1024px) {
+        grid-template: auto / 1fr 1fr 1fr 1fr;
+      }
+
+      @media (max-width: 768px) {
+        grid-template: auto / 1fr 1fr 1fr;
+      }
+
+      @media (max-width: 425px) {
+        grid-template: auto / 1fr 1fr;
+      }
+    }
+  }
+
+  &-nfts {
+    width: 100%;
+    justify-content: center;
+    background-image: url("../../resources/Images/nft-background.png");
+    background-size: cover;
+    background-position: center;
+
+    &-wrapper {
     }
   }
 }

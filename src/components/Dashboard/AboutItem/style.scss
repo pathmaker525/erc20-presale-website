@@ -1,0 +1,52 @@
+@import "../../../styles/variables.scss";
+
+.about {
+  &-item {
+    width: 100%;
+
+    &-title {
+      align-items: center;
+
+      & > h1 {
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        margin: 0 12px 0 0;
+        line-height: 40px;
+      }
+
+      & > h3 {
+        height: 32px;
+        align-items: flex-start !important;
+        justify-content: space-between;
+
+        &::after {
+          content: "";
+          width: 64px;
+          height: 4px;
+          border-radius: 2px;
+          background-color: $blue;
+          z-index: 1;
+        }
+      }
+    }
+
+    & > p {
+      color: $gray;
+      font-size: 14px;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    & > a {
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+      color: rgba($color: $green, $alpha: 0.6);
+
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
+    }
+  }
+}

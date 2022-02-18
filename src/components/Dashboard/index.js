@@ -14,7 +14,7 @@ import { IntroduceVideo } from "resources/Images"
 
 import "./style.scss"
 
-const DashboardComponent = () => (
+const DashboardComponent = ({ icoPercent = 60 }) => (
   <div className="dashboard flex">
     <div className="dashboard-wrapper flex-column">
       <div className="dashboard-carousel"></div>
@@ -46,7 +46,10 @@ const DashboardComponent = () => (
         </div>
         <div className="dashboard-ico-progress">
           <div className="dashboard-ico-progress-wrapper">
-            <div className="dashboard-ico-progress-bar"></div>
+            <div
+              className="dashboard-ico-progress-bar"
+              style={{ width: `${icoPercent}%` }}
+            ></div>
           </div>
           <div className="dashboard-ico-progress-status grid">
             <span className="flex">Softcap</span>

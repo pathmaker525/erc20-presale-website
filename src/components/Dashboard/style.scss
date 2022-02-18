@@ -103,6 +103,52 @@
         white-space: nowrap;
       }
     }
+
+    &-progress {
+      margin-top: 32px;
+      position: relative;
+      width: 100%;
+
+      &-wrapper {
+        width: 100%;
+        height: 16px;
+        border-radius: 8px;
+        background-color: rgba($color: $gray, $alpha: 0.2);
+        overflow: hidden;
+      }
+
+      &-bar {
+        width: 30%;
+        height: 100%;
+        border-radius: 8px;
+        background-image: linear-gradient(90deg, $blue, $green);
+      }
+
+      &-status {
+        top: calc(100% + 4px);
+        position: absolute;
+        width: 100%;
+        grid-template: auto / 1fr 1fr;
+
+        & > span {
+          color: $gray;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: 12px;
+          font-family: "Montserrat", sans-serif;
+
+          &:after {
+            content: "";
+            width: 2px;
+            height: 100%;
+            border-radius: 2px;
+            background-color: $gray;
+            margin-left: 4px;
+            z-index: 1;
+          }
+        }
+      }
+    }
   }
 
   &-presentation {

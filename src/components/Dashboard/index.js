@@ -44,7 +44,15 @@ const DashboardComponent = () => (
             buy tokens
           </a>
         </div>
-        <div className="dashboard-ico-progress"></div>
+        <div className="dashboard-ico-progress">
+          <div className="dashboard-ico-progress-wrapper">
+            <div className="dashboard-ico-progress-bar"></div>
+          </div>
+          <div className="dashboard-ico-progress-status grid">
+            <span className="flex">Softcap</span>
+            <span className="flex">Hardcap</span>
+          </div>
+        </div>
       </div>
 
       <div className="dashboard-presentation container">

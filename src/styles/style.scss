@@ -10,6 +10,26 @@
   outline: none;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: rgba($color: $gray, $alpha: 0.5);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 8px;
+  background: rgba($color: $gray, $alpha: 0.7);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 html,
 body {
   width: 100vw;

@@ -1,6 +1,7 @@
 import { useRoutes } from "react-router-dom"
 
 import Navbar from "components/Navbar"
+import Footer from "components/Footer"
 
 import Dashboard from "./Dashboard"
 
@@ -17,6 +18,7 @@ const AppRouter = () => {
     <>
       <Navbar />
       <UseScrollToTop>{routes}</UseScrollToTop>
+      <Footer />
     </>
   )
 }

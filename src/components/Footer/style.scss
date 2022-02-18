@@ -1,4 +1,145 @@
 @import "../../styles/variables.scss";
 
 .footer {
+  width: 100%;
+  justify-content: center;
+  padding: 48px 0;
+  border-top: 1px solid rgba($color: $gray, $alpha: 0.2);
+
+  &-wrapper {
+    justify-content: center;
+
+    & > span {
+      color: $gray;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+
+  &-community {
+    width: 100%;
+    padding: 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url("../../resources/Images/join-community.png");
+    background-size: cover;
+    background-position: center;
+
+    & > div {
+      row-gap: 4px;
+
+      & > span {
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+
+      & > p {
+        margin: 0;
+        color: $gray;
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+      }
+    }
+
+    & > button {
+      border: none;
+      padding: 10px 16px;
+      color: $white;
+      background-color: $black;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+  &-main {
+    grid-template: auto / 1fr 1fr 1fr;
+    grid-column-gap: 64px;
+    grid-row-gap: 16px;
+    margin: 48px 0;
+
+    @media (max-width: 1028px) {
+      grid-template: auto / 1fr 1fr;
+    }
+
+    @media (max-width: 425px) {
+      grid-template: auto / 1fr;
+    }
+
+    &-about {
+      & > span {
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+
+      & > p {
+        color: $gray;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+      }
+    }
+
+    &-links {
+      & > span {
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+
+      & > div {
+        padding: 14px 0;
+        row-gap: 8px;
+
+        & > a {
+          text-decoration: none;
+          color: rgba($color: $green, $alpha: 0.6);
+          font-size: 14px;
+          font-family: "Open Sans", sans-serif;
+          transition: 0.3s;
+
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+
+    &-follow {
+      & > span {
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+
+      & > p {
+        color: $gray;
+        font-size: 14px;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      & > div {
+        column-gap: 24px;
+
+        & > a {
+          width: 36px;
+          height: 36px;
+
+          & > svg {
+            color: rgba($color: $green, $alpha: 0.6);
+            width: 100%;
+            height: auto;
+            height: intrinsic;
+            transition: 0.3s;
+
+            &:hover {
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
 }

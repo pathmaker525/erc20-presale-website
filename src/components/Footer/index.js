@@ -1,4 +1,9 @@
-import { IoLogoFacebook, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io5"
+import {
+  IoLogoFacebook,
+  IoLogoLinkedin,
+  IoLogoTwitter,
+  IoLogoDiscord,
+} from "react-icons/io5"
 
 import "./style.scss"
 
@@ -45,6 +50,9 @@ const Footer = () => (
             </a>
             <a href="">
               <IoLogoTwitter />
+            </a>
+            <a href="">
+              <IoLogoDiscord />
             </a>
           </div>
         </div>

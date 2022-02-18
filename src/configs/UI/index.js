@@ -85,7 +85,7 @@ export const PartnerItemContents = [
   {
     image: PartnerPlaceholder,
     name: "Wyre",
-    location: "",
+    location: "Portugal",
   },
   {
     image: PartnerPlaceholder,

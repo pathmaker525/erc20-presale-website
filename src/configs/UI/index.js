@@ -2,7 +2,7 @@ import { Me, PartnerPlaceholder, FounderPlaceholder } from "resources/Images"
 import { IoLogoGithub } from "react-icons/io5"
 
 export const AppRoutes = {
-  DASHBOARD: "/",
+  HOME: "/",
   PRESALE: "/presale",
   NFT: "/nft",
   WALLET: "/wallet",

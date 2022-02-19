@@ -7,11 +7,13 @@ import {
   IoLogoDiscord,
 } from "react-icons/io5"
 
+import { keysIn } from "lodash"
+
 import { AppRoutes } from "configs/UI"
 
 import "./style.scss"
 
-const SideBar = ({ show, onClickSideBar }) => (
+const SideBar = ({ pathname, show, onClickSideBar }) => (
   <div
     className={`sidebar${show ? " show" : ""} flex-column`}
     onClick={onClickSideBar}
@@ -19,24 +21,20 @@ const SideBar = ({ show, onClickSideBar }) => (
     <img src={Logo} alt="logo" loading="lazy" />
     <h3>TUMA Inc</h3>
     <div className="sidebar-anchors flex-column">
-      <span className="flex sidebar-anchors-active">
-        <NavLink to={AppRoutes.DASHBOARD}>Home</NavLink>
-      </span>
-      <span className="flex">
-        <NavLink to={AppRoutes.PRESALE}>Presale</NavLink>
-      </span>
-      <span className="flex">
-        <NavLink to={AppRoutes.NFT}>NFT</NavLink>
-      </span>
-      <span className="flex">
-        <NavLink to={AppRoutes.WALLET}>Wallet</NavLink>
-      </span>
-      <span className="flex">
-        <NavLink to={AppRoutes.DOCS}>Docs</NavLink>
-      </span>
-      <span className="flex">
-        <NavLink to={AppRoutes.FAQS}>FAQs</NavLink>
-      </span>
+      {keysIn(AppRoutes).map((data, index) => {
+        if (data !== "NOT_FOUND" && data !== "COMING_SOON") {
+          return (
+            <span
+              key={index}
+              className={`flex${
+                AppRoutes[data] === pathname ? " sidebar-anchors-active" : ""
+              }`}
+            >
+              <NavLink to={AppRoutes[data]}>{data.toLowerCase()}</NavLink>
+            </span>
+          )
+        }
+      })}
     </div>
     <div className="sidebar-links flex">
       <a href="">

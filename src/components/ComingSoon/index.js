@@ -12,7 +12,7 @@ const ComingSoon = () => (
         <span></span>
         <p>Stay tuned!</p>
       </div>
-      <NavLink to={AppRoutes.DASHBOARD}>To Dashboard</NavLink>
+      <NavLink to={AppRoutes.HOME}>To Homepage</NavLink>
     </div>
   </div>
 )

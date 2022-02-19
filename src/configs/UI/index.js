@@ -1,4 +1,5 @@
 import { Me, PartnerPlaceholder, FounderPlaceholder } from "resources/Images"
+import { IoLogoGithub } from "react-icons/io5"
 
 export const AppRoutes = {
   DASHBOARD: "/",
@@ -34,31 +35,55 @@ export const TeamItemContents = [
     image: FounderPlaceholder,
     name: "Rocil Fortune A MALANDA",
     role: "Co-Founder, TUMA Inc.",
+    social: {
+      link: "",
+      icon: <IoLogoGithub />,
+    },
   },
   {
     image: Me,
     name: "Logan Jackson",
     role: "Co-Founder, TUMA Inc.",
+    social: {
+      link: "",
+      icon: <IoLogoGithub />,
+    },
   },
   {
     image: FounderPlaceholder,
     name: "Aiden McBride",
     role: "VP of Business Development",
+    social: {
+      link: "",
+      icon: <IoLogoGithub />,
+    },
   },
   {
     image: FounderPlaceholder,
     name: "Tobo SOW",
     role: "Chief Operating Officer",
+    social: {
+      link: "",
+      icon: <IoLogoGithub />,
+    },
   },
   {
     image: FounderPlaceholder,
     name: "Jessie Adams",
     role: "Chief Legal Officer",
+    social: {
+      link: "",
+      icon: <IoLogoGithub />,
+    },
   },
   {
     image: FounderPlaceholder,
     name: "Martha Gilbert",
     role: "Chief Legal Officer",
+    social: {
+      link: "",
+      icon: <IoLogoGithub />,
+    },
   },
 ]
 

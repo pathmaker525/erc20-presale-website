@@ -120,6 +120,7 @@ const DashboardComponent = ({
                 image={data.image}
                 name={data.name}
                 role={data.role}
+                social={data.social}
               />
             ))}
           </div>

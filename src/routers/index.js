@@ -6,6 +6,9 @@ import Navbar from "components/Navbar"
 import Footer from "components/Footer"
 import SideBar from "components/SideBar"
 
+import NotFound from "components/NotFound"
+import ComingSoon from "components/ComingSoon"
+
 import Dashboard from "./Dashboard"
 
 import UseScrollToTop from "hooks/useScrollToTop"
@@ -18,6 +21,8 @@ const AppRouter = () => {
 
   let routes = useRoutes([
     { path: AppRoutes.DASHBOARD, element: <Dashboard /> },
+    { path: AppRoutes.COMING_SOON, element: <ComingSoon /> },
+    { path: AppRoutes.NOT_FOUND, element: <NotFound /> },
   ])
 
   useEffect(() => {

@@ -1,11 +1,16 @@
+import { Suspense, lazy } from "react"
 import { BrowserRouter } from "react-router-dom"
 
-import AppRouter from "routers/index"
+import Loading from "components/Loading"
+
+const AppRouter = lazy(() => import("routers/index"))
 
 const App = () => (
-  <BrowserRouter>
-    <AppRouter />
-  </BrowserRouter>
+  <Suspense fallback={<Loading />}>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  </Suspense>
 )
 
 export default App

@@ -2,7 +2,11 @@ import { Me, PartnerPlaceholder, FounderPlaceholder } from "resources/Images"
 
 export const AppRoutes = {
   DASHBOARD: "/",
-  NOT_FOUND: "/404",
+  PRESALE: "/presale",
+  NFT: "/nft",
+  WALLET: "/wallet",
+  DOCS: "/docs",
+  NOT_FOUND: "*",
   COMING_SOON: "/coming-soon",
 }
 

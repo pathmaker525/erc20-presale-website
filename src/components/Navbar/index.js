@@ -18,16 +18,16 @@ const Navbar = ({ onClickSideBar }) => (
           <NavLink to={AppRoutes.DASHBOARD}>Home</NavLink>
         </span>
         <span className="flex-column">
-          <NavLink to={AppRoutes.DASHBOARD}>NFT</NavLink>
+          <NavLink to={AppRoutes.COMING_SOON}>Presale</NavLink>
         </span>
         <span className="flex-column">
-          <NavLink to={AppRoutes.DASHBOARD}>Features</NavLink>
+          <NavLink to={AppRoutes.NFT}>NFT</NavLink>
         </span>
         <span className="flex-column">
-          <NavLink to={AppRoutes.DASHBOARD}>Pages</NavLink>
+          <NavLink to={AppRoutes.WALLET}>Wallet</NavLink>
         </span>
         <span className="flex-column">
-          <NavLink to={AppRoutes.DASHBOARD}>Contacts</NavLink>
+          <NavLink to={AppRoutes.DOCS}>Docs</NavLink>
         </span>
       </div>
       <button className="flex" onClick={onClickSideBar}>

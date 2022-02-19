@@ -1,3 +1,4 @@
+import AliceSlider from "./Carousel"
 import PartnerItem from "./PartnerItem"
 import FounderItem from "./FounderItem"
 import HireItem from "./HireItem"
@@ -17,7 +18,9 @@ import "./style.scss"
 const DashboardComponent = ({ icoPercent = 60 }) => (
   <div className="dashboard flex">
     <div className="dashboard-wrapper flex-column">
-      <div className="dashboard-carousel"></div>
+      <div className="dashboard-carousel">
+        <AliceSlider />
+      </div>
 
       <div className="dashboard-ico container">
         <h2 className="flex">ICO Progress</h2>

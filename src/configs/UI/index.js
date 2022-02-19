@@ -45,7 +45,7 @@ export const TeamItemContents = [
     name: "Logan Jackson",
     role: "Co-Founder, TUMA Inc.",
     social: {
-      link: "",
+      link: "https://github.com/CoryITpro",
       icon: <IoLogoGithub />,
     },
   },

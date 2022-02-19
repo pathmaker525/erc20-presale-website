@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 import { IoEllipsisVertical } from "react-icons/io5"
 
 import { keysIn } from "lodash"
@@ -35,6 +35,7 @@ const Navbar = ({ pathname, onClickSideBar }) => (
         <IoEllipsisVertical />
       </button>
     </div>
+    <Outlet />
   </div>
 )
 

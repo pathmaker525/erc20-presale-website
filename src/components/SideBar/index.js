@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 import { Logo } from "resources/Images"
 import {
   IoLogoFacebook,
@@ -50,6 +50,7 @@ const SideBar = ({ pathname, show, onClickSideBar }) => (
         <IoLogoDiscord />
       </a>
     </div>
+    <Outlet />
   </div>
 )
 

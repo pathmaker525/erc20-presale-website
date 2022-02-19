@@ -9,7 +9,9 @@ const FounderItem = ({ image = "", name = "", role = "", social = {} }) => (
         alt="founder placeholder"
         loading="lazy"
       />
-      <a href={social.link}>{social.icon}</a>
+      <a href={social.link} target="_blank" rel="noreferrer">
+        {social.icon}
+      </a>
     </div>
     <div className="flex-column">
       <h4>{name}</h4>

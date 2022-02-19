@@ -2,7 +2,235 @@
 
 .presale {
   width: 100%;
-  height: calc(100vh - 476px);
+  min-height: calc(100vh - 476px);
   justify-content: center;
   padding-top: 96px;
+
+  &-wrapper {
+    justify-content: center;
+    padding: 48px 0 96px;
+  }
+
+  &-main {
+    width: 100%;
+    max-width: 560px;
+    padding: 24px;
+    align-items: center;
+
+    & > .divider {
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      margin: 8px 0;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background-color: $yellow;
+      }
+
+      & > p {
+        width: min-content;
+        background-color: $yellow;
+        white-space: nowrap;
+        margin: 0;
+        padding: 4px 8px;
+        font-size: 10px;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        border: 4px solid $black;
+        margin-left: 32px;
+        z-index: 2;
+      }
+    }
+
+    &-block {
+      width: 100%;
+
+      & > p {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        color: $gray;
+        font-size: 13px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        line-height: 28px;
+
+        & > span:last-child {
+          color: $white;
+          font-size: 13px;
+          font-weight: 600;
+        }
+
+        & > a {
+          color: $white;
+          text-decoration: none;
+          font-size: 13px;
+          font-weight: 600;
+          word-break: break-all;
+          line-height: normal;
+        }
+      }
+
+      & > h3 {
+        align-self: center;
+        text-align: center;
+        color: $white;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+
+    &-buy {
+      width: 100%;
+
+      & > span {
+        color: $green;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        margin: 16px 0 8px;
+      }
+
+      & > label {
+        color: $gray;
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+      }
+
+      & > input {
+        margin-top: 4px;
+        border: none;
+        border-bottom: 1px solid $gray;
+        background-color: transparent;
+        padding: 4px;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        color: $white;
+      }
+    }
+
+    &-sale {
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 24px;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+
+      & > span {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 12px;
+      }
+    }
+
+    & > button {
+      margin-top: 16px;
+      width: 100%;
+      border: none;
+      padding: 10px 16px;
+      color: $black;
+      background-image: linear-gradient(90deg, $green, $blue);
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      &:hover {
+        background-image: linear-gradient(90deg, $blue, $green);
+      }
+    }
+  }
+
+  &-active {
+    margin-top: 4px;
+    width: 100%;
+
+    & > span {
+      color: $gray;
+
+      background-color: $green;
+    }
+  }
+
+  &-inactive {
+    margin-top: 4px;
+    width: 100%;
+
+    & > span {
+      color: $gray;
+      background-color: $pink;
+    }
+  }
+
+  &-queued {
+    margin-top: 4px;
+    width: 100%;
+
+    & > span {
+      color: $gray;
+      background-color: $orange;
+    }
+  }
+
+  &-success {
+    margin-top: 4px;
+    width: 100%;
+
+    & > span {
+      color: $gray;
+      background-color: $green;
+    }
+  }
+
+  &-loading {
+    margin-top: 4px;
+    width: 100%;
+
+    & > span {
+      color: $black-dark;
+      background-color: $gray;
+    }
+  }
+
+  &-timer {
+    margin-top: 24px;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+    grid-column-gap: 16px;
+
+    & > .counter {
+      align-items: center;
+
+      & > div {
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
+
+        & > span {
+          width: 16px;
+          font-family: "Montserrat", sans-serif;
+          color: $white;
+          font-size: 24px;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+
+      & > span {
+        margin-top: 8px;
+        color: $gray;
+        font-size: 12px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
 }

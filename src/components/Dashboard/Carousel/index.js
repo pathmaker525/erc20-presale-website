@@ -20,6 +20,8 @@ const AliceSlider = () => (
     items={items}
     responsive={responsive}
     mouseTracking
+    autoPlay
+    autoPlayInterval={3000}
     infinite
   ></AliceCarousel>
 )

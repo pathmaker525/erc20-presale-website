@@ -15,7 +15,13 @@ import { IntroduceVideo } from "resources/Images"
 
 import "./style.scss"
 
-const DashboardComponent = ({ icoPercent = 60 }) => (
+const DashboardComponent = ({
+  fundRaised,
+  tokenPrice,
+  bnbRaised,
+  tokenSold,
+  icoPercent,
+}) => (
   <div className="dashboard flex">
     <div className="dashboard-wrapper flex-column">
       <div className="dashboard-carousel">
@@ -28,19 +34,19 @@ const DashboardComponent = ({ icoPercent = 60 }) => (
           <div className="dashboard-ico-status-wrapper grid">
             <div className="dashboard-ico-status-item">
               <span>Funds raised</span>
-              <h3>$00</h3>
+              <h3>$ {fundRaised}</h3>
             </div>
             <div className="dashboard-ico-status-item">
               <span>Worth of tokens</span>
-              <h3>$00</h3>
+              <h3>$ {tokenPrice.toFixed(8)}</h3>
             </div>
             <div className="dashboard-ico-status-item">
               <span>BNB Raised</span>
-              <h3>00</h3>
+              <h3>{Number(bnbRaised).toFixed(2)} BNB</h3>
             </div>
             <div className="dashboard-ico-status-item">
               <span>Tokens distributed</span>
-              <h3>00</h3>
+              <h3>{tokenSold}</h3>
             </div>
           </div>
           <a className="rounded shadowed" href="">

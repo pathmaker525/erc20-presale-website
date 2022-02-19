@@ -16,12 +16,12 @@ export const AboutItemContents = [
   {
     title: "What is TUMA",
     content:
-      "Tuma is a company, a digital token and wallet designed for payments. An asset based on Blockchain Technology of Binance Smart Chain, without permission, semi-decentralized that can adjust transactions in 2 to 10 minutes.",
+      "Tuma is a company, a digital token, and wallet designed for payments. An asset based on Blockchain Technology of Binance Smart Chain, without permission, semi-decentralized that can adjust transactions in 2 to 10 minutes.",
   },
   {
     title: "How it works",
     content:
-      "Send cash to Francophone Africa directly at home without moving and at low cost of 1.5% thanks to our Wallet Tuma do not stress you to send money to your children abroad with his franc CFA electronics you Could link your Money service to the platform and transfer your CFA franc into the wallet and transfer it to your loved ones at a fee 1.5%. Access the world of currency crypto for the first time directly with the Fiat XOF with a CFA / TMA, TMA / BNB pair at extremely low expense. For a first time in French-speaking Africa.",
+      "Send cash to Francophone Africa directly at home without moving and at the low cost of 1.5%, thanks to our Wallet Tuma do not stress you to send money to your children abroad with his franc CFA electronics you Could link your Money service to the platform and transfer your CFA franc into the wallet and transfer it to your loved ones at a fee 1.5%. Access the world of currency crypto for the first time directly with the Fiat XOF with a CFA / TMA, TMA / BNB pair at extremely low expense. For the first time in French-speaking Africa.",
   },
   {
     title: "Our Mission",

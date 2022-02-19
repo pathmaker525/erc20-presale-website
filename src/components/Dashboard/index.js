@@ -45,7 +45,7 @@ const DashboardComponent = ({ icoPercent = 60 }) => (
           </a>
         </div>
         <div className="dashboard-ico-progress">
-          <div className="dashboard-ico-progress-wrapper">
+          <div className="dashboard-ico-progress-wrapper shadowed">
             <div
               className="dashboard-ico-progress-bar"
               style={{ width: `${icoPercent}%` }}

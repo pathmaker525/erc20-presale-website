@@ -3,15 +3,20 @@
 .loading {
   width: 100%;
   height: 100%;
+  justify-content: center;
 
   &-wrapper {
+    width: 100%;
+    height: 100%;
     align-items: center;
     justify-content: center;
 
     & > span {
       color: $pink;
       animation: colorChange 3s linear 0s infinite;
+      font-size: 18px;
       font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
     }
   }
 }

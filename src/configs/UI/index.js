@@ -6,6 +6,7 @@ export const AppRoutes = {
   NFT: "/nft",
   WALLET: "/wallet",
   DOCS: "/docs",
+  FAQS: "/faqs",
   NOT_FOUND: "*",
   COMING_SOON: "/coming-soon",
 }

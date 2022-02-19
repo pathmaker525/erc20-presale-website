@@ -29,6 +29,9 @@ const Navbar = ({ onClickSideBar }) => (
         <span className="flex-column">
           <NavLink to={AppRoutes.DOCS}>Docs</NavLink>
         </span>
+        <span className="flex-column">
+          <NavLink to={AppRoutes.FAQS}>FAQs</NavLink>
+        </span>
       </div>
       <button className="flex" onClick={onClickSideBar}>
         <IoEllipsisVertical />

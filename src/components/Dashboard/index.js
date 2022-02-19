@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom"
+
 import AliceSlider from "./Carousel"
 import PartnerItem from "./PartnerItem"
 import FounderItem from "./FounderItem"
@@ -9,6 +11,7 @@ import {
   TeamItemContents,
   HireItemContents,
   PartnerItemContents,
+  AppRoutes,
 } from "configs/UI"
 
 import { IntroduceVideo } from "resources/Images"
@@ -49,9 +52,9 @@ const DashboardComponent = ({
               <h3>{tokenSold}</h3>
             </div>
           </div>
-          <a className="rounded shadowed" href="">
+          <NavLink className="rounded shadowed" to={AppRoutes.PRESALE}>
             buy tokens
-          </a>
+          </NavLink>
         </div>
         <div className="dashboard-ico-progress">
           <div className="dashboard-ico-progress-wrapper shadowed">

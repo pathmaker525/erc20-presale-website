@@ -2,7 +2,8 @@
 
 .dashboard {
   width: 100%;
-  min-height: calc(100% - 556px);
+  // min-height: calc(100% - 556px);
+  min-height: calc(100% - 476px);
   justify-content: center;
 
   &-wrapper {
@@ -57,10 +58,9 @@
 
   &-carousel {
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh);
 
     @media (max-width: 425px) {
-      height: calc(100vh - 80px);
       max-height: none;
     }
   }

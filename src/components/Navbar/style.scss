@@ -1,13 +1,14 @@
 @import "../../styles/variables.scss";
 
 .navbar {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 80px;
   justify-content: center;
   align-items: flex-end;
-  border-bottom: 1px solid rgba($color: $gray, $alpha: 0.2);
+  // border-bottom: 1px solid rgba($color: $gray, $alpha: 0.2);
   backdrop-filter: blur(32px);
+  z-index: 99;
 
   &-wrapper {
     align-items: center;
@@ -22,7 +23,8 @@
       padding: 4px;
       border-radius: 50%;
       border: 1px solid transparent;
-      background-color: $black;
+      // background-color: $black;
+      background-color: transparent;
       transition: 0.3s;
 
       &:hover {

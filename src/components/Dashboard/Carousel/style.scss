@@ -6,7 +6,14 @@
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100%;
+  // height: 100%;
+
+  &:hover {
+    & > .alice-carousel__prev-btn,
+    .alice-carousel__next-btn {
+      opacity: 1;
+    }
+  }
 
   & > div {
     &:first-of-type {
@@ -37,6 +44,7 @@
 
   &__prev-btn,
   &__next-btn {
+    opacity: 0;
     position: absolute;
     display: flex;
     align-items: center;

@@ -58,7 +58,7 @@
 
   &-carousel {
     width: 100%;
-    height: calc(100vh);
+    // height: calc(100vh);
 
     @media (max-width: 425px) {
       max-height: none;

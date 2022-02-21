@@ -1,8 +1,6 @@
 import AliceCarousel from "react-alice-carousel"
 
-import CarouselItem from "./CarouselItem"
-
-import { PartnerItemContents } from "configs/UI"
+import CarouselItemOne from "./CarouselItemOne"
 
 import "./style.scss"
 
@@ -10,10 +8,7 @@ const responsive = {
   1440: { items: 1 },
 }
 
-const items = [
-  <CarouselItem image={PartnerItemContents[0].image} />,
-  <CarouselItem image={PartnerItemContents[0].image} />,
-]
+const items = [<CarouselItemOne />]
 
 const AliceSlider = () => (
   <AliceCarousel
@@ -21,7 +16,7 @@ const AliceSlider = () => (
     responsive={responsive}
     mouseTracking
     autoPlay
-    autoPlayInterval={3000}
+    autoPlayInterval={7000}
     infinite
   ></AliceCarousel>
 )

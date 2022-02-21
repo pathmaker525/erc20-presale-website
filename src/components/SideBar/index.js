@@ -1,15 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom"
-import { Logo } from "resources/Images"
-import {
-  IoLogoFacebook,
-  IoLogoLinkedin,
-  IoLogoTwitter,
-  IoLogoDiscord,
-} from "react-icons/io5"
-
 import { keysIn } from "lodash"
 
-import { AppRoutes } from "configs/UI"
+import { Logo } from "resources/Images"
+
+import { AppRoutes, SocialItemContents } from "configs/UI"
 
 import "./style.scss"
 
@@ -37,18 +31,11 @@ const SideBar = ({ pathname, show, onClickSideBar }) => (
       })}
     </div>
     <div className="sidebar-links flex">
-      <a href="">
-        <IoLogoFacebook />
-      </a>
-      <a href="">
-        <IoLogoLinkedin />
-      </a>
-      <a href="">
-        <IoLogoTwitter />
-      </a>
-      <a href="">
-        <IoLogoDiscord />
-      </a>
+      {SocialItemContents.map((data, index) => (
+        <a key={index} href={data.link}>
+          {data.icon}
+        </a>
+      ))}
     </div>
     <Outlet />
   </div>

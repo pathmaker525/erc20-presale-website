@@ -1,5 +1,5 @@
 import { Me, PartnerPlaceholder, FounderPlaceholder } from "resources/Images"
-import { IoLogoGithub } from "react-icons/io5"
+import { SiGithub, SiFacebook, SiTwitter, SiTelegram } from "react-icons/si"
 
 export const AppRoutes = {
   HOME: "/",
@@ -11,6 +11,21 @@ export const AppRoutes = {
   NOT_FOUND: "*",
   COMING_SOON: "/coming-soon",
 }
+
+export const SocialItemContents = [
+  {
+    link: "",
+    icon: <SiFacebook />,
+  },
+  {
+    link: "",
+    icon: <SiTwitter />,
+  },
+  {
+    link: "",
+    icon: <SiTelegram />,
+  },
+]
 
 export const AboutItemContents = [
   {
@@ -33,11 +48,11 @@ export const AboutItemContents = [
 export const TeamItemContents = [
   {
     image: FounderPlaceholder,
-    name: "Rocil Fortune A MALANDA",
+    name: "Rocil Fortuné A MALANDA",
     role: "Co-Founder, TUMA Inc.",
     social: {
       link: "",
-      icon: <IoLogoGithub />,
+      icon: <SiGithub />,
     },
   },
   {
@@ -46,7 +61,16 @@ export const TeamItemContents = [
     role: "Co-Founder, TUMA Inc.",
     social: {
       link: "https://github.com/CoryITpro",
-      icon: <IoLogoGithub />,
+      icon: <SiGithub />,
+    },
+  },
+  {
+    image: FounderPlaceholder,
+    name: "Billy Rose",
+    role: "Head of Development and Programming",
+    social: {
+      link: "",
+      icon: <SiGithub />,
     },
   },
   {
@@ -55,16 +79,16 @@ export const TeamItemContents = [
     role: "VP of Business Development",
     social: {
       link: "",
-      icon: <IoLogoGithub />,
+      icon: <SiGithub />,
     },
   },
   {
     image: FounderPlaceholder,
-    name: "Tobo SOW",
+    name: "Russia Nguimbi",
     role: "Chief Operating Officer",
     social: {
       link: "",
-      icon: <IoLogoGithub />,
+      icon: <SiGithub />,
     },
   },
   {
@@ -73,7 +97,7 @@ export const TeamItemContents = [
     role: "Chief Legal Officer",
     social: {
       link: "",
-      icon: <IoLogoGithub />,
+      icon: <SiGithub />,
     },
   },
   {
@@ -82,7 +106,7 @@ export const TeamItemContents = [
     role: "Chief Legal Officer",
     social: {
       link: "",
-      icon: <IoLogoGithub />,
+      icon: <SiGithub />,
     },
   },
 ]

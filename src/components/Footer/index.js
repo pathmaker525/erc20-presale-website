@@ -1,9 +1,4 @@
-import {
-  IoLogoFacebook,
-  IoLogoLinkedin,
-  IoLogoTwitter,
-  IoLogoDiscord,
-} from "react-icons/io5"
+import { SocialItemContents } from "configs/UI"
 
 import "./style.scss"
 
@@ -42,18 +37,11 @@ const Footer = () => (
             Looking cautiously round, to ascertain that they were not overheard
           </p>
           <div className="flex">
-            <a href="">
-              <IoLogoFacebook />
-            </a>
-            <a href="">
-              <IoLogoLinkedin />
-            </a>
-            <a href="">
-              <IoLogoTwitter />
-            </a>
-            <a href="">
-              <IoLogoDiscord />
-            </a>
+            {SocialItemContents.map((data, index) => (
+              <a key={index} href={data.link}>
+                {data.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>

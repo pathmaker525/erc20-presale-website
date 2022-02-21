@@ -31,9 +31,14 @@ const Navbar = ({ pathname, onClickSideBar }) => (
           }
         })}
       </div>
-      <button className="flex" onClick={onClickSideBar}>
-        <IoEllipsisVertical />
-      </button>
+      <div className="navbar-utility flex">
+        <button className="navbar-utility-wallet flex rounded">
+          Connect MM
+        </button>
+        <button className="navbar-utility-expand flex" onClick={onClickSideBar}>
+          <IoEllipsisVertical />
+        </button>
+      </div>
     </div>
     <Outlet />
   </div>

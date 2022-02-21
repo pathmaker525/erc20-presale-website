@@ -16,11 +16,9 @@ const Footer = () => (
       <div className="footer-main grid">
         <div className="footer-main-about">
           <span>About TUMA</span>
-          <p>
-            Looking cautiously round, to ascertain that they were not overheard,
-            the two hags cowered nearer to the fire, and chuckled heartily
-          </p>
+          <p></p>
         </div>
+
         <div className="footer-main-links">
           <span>About TUMA</span>
           <div className="flex-column">
@@ -31,6 +29,7 @@ const Footer = () => (
             <a href="">About</a>
           </div>
         </div>
+
         <div className="footer-main-follow">
           <span>Follow Us</span>
           <p>

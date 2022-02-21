@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-import AliceSlider from "./Carousel"
+import Hero from "./Hero"
 import PartnerItem from "./PartnerItem"
 import FounderItem from "./FounderItem"
 import HireItem from "./HireItem"
@@ -28,7 +28,7 @@ const DashboardComponent = ({
   <div className="dashboard flex">
     <div className="dashboard-wrapper flex-column">
       <div className="dashboard-carousel">
-        <AliceSlider />
+        <Hero />
       </div>
 
       <div className="dashboard-ico container">

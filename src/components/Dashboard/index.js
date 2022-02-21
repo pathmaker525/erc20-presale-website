@@ -79,9 +79,9 @@ const DashboardComponent = ({
           <div className="dashboard-presentation-introduce-detail">
             <h3>#Blockchain technology for Africa</h3>
             <p>
-              In a world where one company controls 77% of all researches,
-              influencing trillions of dollars in spending, shaping perceptions
-              and effectively acting as the primary gatekeeper to the internet
+              The blockchain is a solution for the financial sector in Africa,
+              more precisely in money transfers. Especially with its system of
+              lower costs, its speed of sending.
             </p>
           </div>
         </div>

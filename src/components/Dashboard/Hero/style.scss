@@ -36,6 +36,7 @@
 
     & > p {
       font-family: "Montserrat", sans-serif;
+      text-align: end;
 
       @media (max-width: 768px) {
         text-align: center;
@@ -44,6 +45,7 @@
 
     &-counter {
       align-items: center;
+      justify-content: flex-end;
 
       @media (max-width: 768px) {
         justify-content: center;

@@ -77,7 +77,7 @@ const DashboardComponent = ({
             <img src={IntroduceVideo} alt="introduce video" loading="lazy" />
           </div>
           <div className="dashboard-presentation-introduce-detail">
-            <h3>#Number 1 in Tokens investment in AFRICA</h3>
+            <h3>#Blockchain technology for Africa</h3>
             <p>
               In a world where one company controls 77% of all researches,
               influencing trillions of dollars in spending, shaping perceptions

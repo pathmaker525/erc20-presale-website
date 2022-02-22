@@ -97,3 +97,96 @@ body {
 button {
   cursor: pointer;
 }
+
+.ReactModal__Content {
+  row-gap: 8px;
+
+  & h3 {
+    font-family: "Montserrat", sans-serif;
+    margin: 8px 0 8px 0;
+    color: $white;
+  }
+
+  & h4 {
+    font-family: "Montserrat", sans-serif;
+    margin: 4px 0 8px;
+    color: $gray;
+  }
+
+  & > .modal-header {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba($color: $gray, $alpha: 0.1);
+
+    & > svg {
+      color: $gray;
+      min-width: 24px;
+      height: auto;
+      height: intrinsic;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  & > .modal-control {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+
+    & > button {
+      width: 100%;
+      align-items: flex-end;
+      justify-content: space-between;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      padding: 0 16px;
+      height: 40px;
+      column-gap: 24px;
+      color: rgba($color: $gray, $alpha: 0.5);
+
+      & > svg {
+        width: 24px;
+        height: auto;
+        height: intrinsic;
+      }
+
+      & > span {
+        height: 24px;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+
+  & > button {
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 16px;
+    height: 48px;
+
+    & > svg {
+      width: 32px;
+      height: auto;
+      height: intrinsic;
+      margin-right: 24px;
+    }
+
+    & > span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: $gray;
+    }
+  }
+}

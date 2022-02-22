@@ -1,4 +1,10 @@
-import { Me, PartnerPlaceholder, FounderPlaceholder } from "resources/Images"
+import {
+  LoganJackson,
+  RocilFortune,
+  RussiaNguimbi,
+  PartnerPlaceholder,
+  FounderPlaceholder,
+} from "resources/Images"
 import { SiGithub, SiFacebook, SiTwitter, SiTelegram } from "react-icons/si"
 
 export const AppRoutes = {
@@ -47,7 +53,7 @@ export const AboutItemContents = [
 
 export const TeamItemContents = [
   {
-    image: FounderPlaceholder,
+    image: RocilFortune,
     name: "Rocil Fortuné A MALANDA",
     role: "Co-Founder, TUMA Inc.",
     social: {
@@ -56,7 +62,7 @@ export const TeamItemContents = [
     },
   },
   {
-    image: Me,
+    image: LoganJackson,
     name: "Logan Jackson",
     role: "Co-Founder, TUMA Inc.",
     social: {
@@ -83,7 +89,7 @@ export const TeamItemContents = [
     },
   },
   {
-    image: FounderPlaceholder,
+    image: RussiaNguimbi,
     name: "Russia Nguimbi",
     role: "Chief Operating Officer",
     social: {

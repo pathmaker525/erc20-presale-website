@@ -108,26 +108,28 @@ const DashboardComponent = ({
           {keysIn(RoadmapItemContents).map((data, index) => (
             <div key={index} className="dashboard-roadmap-year grid">
               <div className="dashboard-roadmap-year-title flex">
-                <h3 className="rounded shadowed">{data}</h3>
+                <h3 className="">{data}</h3>
               </div>
               {RoadmapItemContents[data].map((data, index) => (
                 <div
                   key={index}
-                  className="dashboard-roadmap-quarter rounded shadowed flex-column"
+                  className="dashboard-roadmap-quarter rounded shadowed flex"
                 >
-                  <h4>Q{index + 1}</h4>
-                  <div className="dashboard-roadmap-quarter-wrapper grid">
-                    {data.map((data, index) => (
-                      <div
-                        key={index}
-                        className={`dashboard-roadmap-steps${
-                          data.achieved ? " step-achieved " : " "
-                        }flex`}
-                      >
-                        <HiOutlineAtSymbol />
-                        <span className="flex">{data.content}</span>
-                      </div>
-                    ))}
+                  <h4 className="flex">Q{index + 1}</h4>
+                  <div className="dashboard-roadmap-quarter-wrapper flex">
+                    <div className="grid">
+                      {data.map((data, index) => (
+                        <div
+                          key={index}
+                          className={`dashboard-roadmap-steps${
+                            data.achieved ? " step-achieved " : " "
+                          }flex`}
+                        >
+                          <HiOutlineAtSymbol />
+                          <span className="flex">{data.content}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}

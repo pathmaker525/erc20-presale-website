@@ -1,10 +1,9 @@
+import { PartnerPlaceholder, FounderPlaceholder } from "resources/Images"
 import {
   LoganJackson,
   RocilFortune,
   RussiaNguimbi,
-  PartnerPlaceholder,
-  FounderPlaceholder,
-} from "resources/Images"
+} from "resources/Images/Avatars"
 import { SiGithub, SiFacebook, SiTwitter, SiTelegram } from "react-icons/si"
 
 export const AppRoutes = {

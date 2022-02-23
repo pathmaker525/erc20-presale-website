@@ -2,8 +2,9 @@
 
 .not-found {
   width: 100%;
-  height: calc(100% - 475px);
+  height: calc(100% - 476px);
   min-height: 640px;
+  justify-content: center;
 
   &-wrapper {
     height: 100%;

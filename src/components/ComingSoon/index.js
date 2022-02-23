@@ -5,7 +5,7 @@ import { AppRoutes } from "configs/UI"
 import "./style.scss"
 
 const ComingSoon = () => (
-  <div className="coming-soon">
+  <div className="coming-soon flex">
     <div className="coming-soon-wrapper container flex-column">
       <div className="coming-soon-main flex">
         <h2>Coming Soon</h2>

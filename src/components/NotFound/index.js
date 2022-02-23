@@ -5,7 +5,7 @@ import { AppRoutes } from "configs/UI"
 import "./style.scss"
 
 const NotFound = () => (
-  <div className="not-found">
+  <div className="not-found flex">
     <div className="not-found-wrapper container flex-column">
       <div className="not-found-main flex">
         <h2>404</h2>

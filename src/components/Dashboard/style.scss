@@ -230,6 +230,77 @@
   }
 
   &-roadmap {
+    &-wrapper {
+      width: 100%;
+    }
+
+    &-year {
+      margin: 16px 0 8px;
+      grid-template: auto / 1fr 1fr;
+      grid-column-gap: 24px;
+      grid-row-gap: 16px;
+
+      @media (max-width: 768px) {
+        grid-template: auto / 1fr;
+      }
+
+      &-title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        @media (max-width: 768px) {
+          grid-column-end: 2;
+        }
+
+        & > h3 {
+          padding: 4px 8px;
+          color: $black !important;
+          background-color: $green;
+        }
+      }
+    }
+
+    &-quarter {
+      width: 100%;
+      background-color: rgba($color: $black-dark, $alpha: 0.3);
+      padding: 12px;
+
+      & > h4 {
+        width: 100%;
+        text-align: center;
+        color: $green;
+        font-family: "Montserrat", sans-serif;
+        margin: 0 0 16px;
+      }
+
+      &-wrapper {
+        grid-template: auto / 1fr;
+        grid-row-gap: 4px;
+      }
+    }
+
+    &-steps {
+      width: 100%;
+      align-items: center;
+
+      & > svg {
+        width: 18px;
+        min-width: 18px;
+        height: auto;
+        height: intrinsic;
+        color: $gray;
+      }
+
+      & > span {
+        position: relative;
+        align-items: flex-start;
+        color: $gray;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        padding-left: 16px;
+      }
+    }
   }
 
   &-documentation {
@@ -315,5 +386,15 @@
 
     &-wrapper {
     }
+  }
+}
+
+.step-achieved {
+  & > svg {
+    color: $green;
+  }
+
+  & > span {
+    color: $green;
   }
 }

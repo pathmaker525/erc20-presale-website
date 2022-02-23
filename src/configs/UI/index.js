@@ -32,6 +32,82 @@ export const SocialItemContents = [
   },
 ]
 
+export const RoadmapItemContents = {
+  2022: [
+    [
+      {
+        achieved: true,
+        content: "Development of Tuma Concept and Validation",
+      },
+      { achieved: true, content: "Tuma Whitepaper" },
+      {
+        content: "Development of the team & Partners",
+      },
+    ],
+    [
+      {
+        content: "Creation of Tuma Token",
+      },
+      {
+        content: "Pre-sale of Tuma Token",
+      },
+      {
+        content: "DEX Listing",
+      },
+    ],
+    [
+      {
+        content: "Design of the Tuma platform",
+      },
+      {
+        content: "Creation of Tuma Wallet",
+      },
+    ],
+    [
+      {
+        content: "Listing on Coinmarketcap & Coingecko",
+      },
+      { content: "Creation of the digital currency FCFA" },
+    ],
+  ],
+  2023: [
+    [
+      {
+        content: "Project deployment in French-Speaking Africa",
+      },
+      {
+        content: "Wallet deployment in French-Speaking Africa",
+      },
+      {
+        content: "Marketing and communication campaign",
+      },
+    ],
+    [
+      {
+        content: "Initial offer of a participation pool",
+      },
+      {
+        content: "Concept NFT",
+      },
+      {
+        content: "Start building the NFT platform",
+      },
+      {
+        content: "Limited NFT sales",
+      },
+      {
+        content:
+          "Proposal for the use of the NFT system in the administration of different African countries",
+      },
+    ],
+    [
+      {
+        content: "Expansion of the Company's vision",
+      },
+    ],
+  ],
+}
+
 export const AboutItemContents = [
   {
     title: "What is TUMA",

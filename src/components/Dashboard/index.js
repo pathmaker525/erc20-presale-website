@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom"
 import FadeIn from "react-fade-in/lib/FadeIn"
+import { keysIn } from "lodash"
+import { HiOutlineAtSymbol } from "react-icons/hi"
 
 import Hero from "./Hero"
 import PartnerItem from "./PartnerItem"
@@ -13,6 +15,7 @@ import {
   HireItemContents,
   PartnerItemContents,
   AppRoutes,
+  RoadmapItemContents,
 } from "configs/UI"
 
 import { IntroduceVideo } from "resources/Images"
@@ -101,6 +104,36 @@ const DashboardComponent = ({
 
       <div className="dashboard-roadmap container">
         <h2 className="flex">Implementation Roadmap</h2>
+        <div className="dashboard-roadmap-wrapper flex-column">
+          {keysIn(RoadmapItemContents).map((data, index) => (
+            <div key={index} className="dashboard-roadmap-year grid">
+              <div className="dashboard-roadmap-year-title flex">
+                <h3 className="rounded shadowed">{data}</h3>
+              </div>
+              {RoadmapItemContents[data].map((data, index) => (
+                <div
+                  key={index}
+                  className="dashboard-roadmap-quarter rounded shadowed flex-column"
+                >
+                  <h4>Q{index + 1}</h4>
+                  <div className="dashboard-roadmap-quarter-wrapper grid">
+                    {data.map((data, index) => (
+                      <div
+                        key={index}
+                        className={`dashboard-roadmap-steps${
+                          data.achieved ? " step-achieved " : " "
+                        }flex`}
+                      >
+                        <HiOutlineAtSymbol />
+                        <span className="flex">{data.content}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="dashboard-documentation container">

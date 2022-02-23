@@ -21,7 +21,7 @@ import "./style.scss"
 
 const DashboardComponent = ({
   fundRaised,
-  tokenPrice,
+  icoTokenSupply,
   bnbRaised,
   tokenSold,
   icoPercent,
@@ -37,16 +37,16 @@ const DashboardComponent = ({
         <div className="dashboard-ico-status flex">
           <div className="dashboard-ico-status-wrapper grid">
             <div className="dashboard-ico-status-item">
+              <span>BNB Raised</span>
+              <h3>{Number(bnbRaised).toFixed(3)} BNB</h3>
+            </div>
+            <div className="dashboard-ico-status-item">
               <span>Funds raised</span>
               <h3>$ {fundRaised}</h3>
             </div>
             <div className="dashboard-ico-status-item">
-              <span>Worth of tokens</span>
-              <h3>$ {tokenPrice.toFixed(8)}</h3>
-            </div>
-            <div className="dashboard-ico-status-item">
-              <span>BNB Raised</span>
-              <h3>{Number(bnbRaised).toFixed(2)} BNB</h3>
+              <span>ICO Token Supply</span>
+              <h3>{icoTokenSupply} TUMA</h3>
             </div>
             <div className="dashboard-ico-status-item">
               <span>Tokens distributed</span>
@@ -60,7 +60,7 @@ const DashboardComponent = ({
         <div className="dashboard-ico-progress">
           <div className="dashboard-ico-progress-wrapper shadowed">
             <div
-              className="dashboard-ico-progress-bar"
+              className="dashboard-ico-progress-bar flex"
               style={{ width: `${icoPercent}%` }}
             ></div>
           </div>

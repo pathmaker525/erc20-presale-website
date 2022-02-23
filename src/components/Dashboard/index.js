@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import FadeIn from "react-fade-in/lib/FadeIn"
 
 import Hero from "./Hero"
 import PartnerItem from "./PartnerItem"
@@ -26,7 +27,7 @@ const DashboardComponent = ({
   icoPercent,
 }) => (
   <div className="dashboard flex">
-    <div className="dashboard-wrapper flex-column">
+    <FadeIn className="dashboard-wrapper flex-column">
       <div className="dashboard-carousel">
         <Hero />
       </div>
@@ -156,7 +157,7 @@ const DashboardComponent = ({
           <h3>Sales will be limited NFT purely African</h3>
         </div>
       </div>
-    </div>
+    </FadeIn>
   </div>
 )
 

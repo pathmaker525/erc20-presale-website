@@ -7,7 +7,6 @@
 
   &-wrapper {
     width: 100%;
-    align-items: center;
 
     & > span {
       color: $white;
@@ -15,6 +14,9 @@
     }
 
     & > div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
       padding: 32px 0 64px;
 
       @media (max-wdith: 425px) {

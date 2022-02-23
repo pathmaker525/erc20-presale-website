@@ -1,10 +1,10 @@
 import "./style.scss"
 
-const HireItem = ({ location = "", role = "" }) => (
+const HireItem = ({ location, role, link }) => (
   <div className="hire-item">
     <span>{location}</span>
     <h4>{role}</h4>
-    <a href="">Learn More and Apply</a>
+    <a href={link}>Learn More and Apply</a>
   </div>
 )
 

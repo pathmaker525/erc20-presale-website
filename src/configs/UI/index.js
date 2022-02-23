@@ -196,18 +196,22 @@ export const HireItemContents = [
   {
     location: "Port McKayla",
     role: "Programme Manager",
+    link: "",
   },
   {
     location: "North Lesley",
     role: "Development Operations Engineer - Platform Team (Q-Branch)",
+    link: "",
   },
   {
     location: "Port McKayla",
     role: "Paid Acquisition Manager",
+    link: "",
   },
   {
     location: "West Bernadette",
     role: "Data Science Analyst",
+    link: "",
   },
 ]
 

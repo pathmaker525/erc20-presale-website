@@ -165,7 +165,12 @@ const DashboardComponent = ({
           <h2 className="flex">Vacancies</h2>
           <div className="dashboard-team-hire-wrapper">
             {HireItemContents.map((data, index) => (
-              <HireItem key={index} location={data.location} role={data.role} />
+              <HireItem
+                key={index}
+                location={data.location}
+                role={data.role}
+                link={data.link}
+              />
             ))}
           </div>
         </div>

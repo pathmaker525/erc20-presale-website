@@ -126,6 +126,29 @@ export const AboutItemContents = [
   },
 ]
 
+export const TokenomicsItemContents = [
+  {
+    title: "Team",
+    percentage: 10,
+  },
+  {
+    title: "Presale",
+    percentage: 25,
+  },
+  {
+    title: "LP on DEX",
+    percentage: 12,
+  },
+  {
+    title: "CEX Listing",
+    percentage: 23,
+  },
+  {
+    title: "Ecosystem",
+    percentage: 30,
+  },
+]
+
 export const TeamItemContents = [
   {
     image: RocilFortune,

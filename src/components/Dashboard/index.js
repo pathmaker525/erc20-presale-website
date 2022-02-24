@@ -16,6 +16,7 @@ import {
   PartnerItemContents,
   AppRoutes,
   RoadmapItemContents,
+  TokenomicsItemContents,
 } from "configs/UI"
 
 import { IntroduceVideo } from "resources/Images"
@@ -143,6 +144,31 @@ const DashboardComponent = ({
         <div className="dashboard-documentation-wrapper">
           <h3>Download whitepaper</h3>
           <button className="rounded shadowed">download</button>
+        </div>
+      </div>
+
+      <div className="dashboard-tokenomics flex-column">
+        <h2>Tokenomics</h2>
+        <div className="dashboard-tokenomics-wrapper container flex">
+          <div className="dashboard-tokenomics-wrapper-main grid">
+            {TokenomicsItemContents.map((data, index) => (
+              <div
+                key={index}
+                className="dashboard-tokenomics-item flex-column"
+              >
+                <div className="dashboard-tokenomics-item-progress flex">
+                  <div
+                    className="dashboard-tokenomics-item-progress-bar rounded"
+                    style={{ height: `${data.percentage}%` }}
+                  ></div>
+                  <span>{data.title}</span>
+                </div>
+                <div className="dashboard-tokenomics-item-percentage flex">
+                  {data.percentage} %
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

@@ -328,6 +328,95 @@
     }
   }
 
+  &-tokenomics {
+    width: 100%;
+    align-items: center;
+    background-color: rgba($color: $black-dark, $alpha: 0.1);
+
+    & > h2 {
+      width: 100%;
+      text-align: center;
+    }
+
+    &-wrapper {
+      padding: 32px 0 48px;
+      justify-content: center;
+
+      &-main {
+        grid-template: auto / 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 24px;
+        width: 60%;
+
+        @media (max-width: 1024px) {
+          grid-column-gap: 16px;
+          width: 80%;
+        }
+
+        @media (max-width: 768px) {
+          grid-column-gap: 8px;
+          width: 100%;
+        }
+      }
+    }
+
+    &-item {
+      width: 100%;
+
+      &:first-of-type {
+        & > div {
+          border-radius: 8px 32px 8px 32px;
+        }
+      }
+
+      &:last-of-type {
+        & > div {
+          border-radius: 32px 8px 32px 8px;
+        }
+      }
+
+      &-progress {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 320px;
+        background-color: rgba($color: $black-dark, $alpha: 0.15);
+        border-radius: 8px;
+        overflow: hidden;
+
+        &-bar {
+          width: 100%;
+          background-image: linear-gradient(135deg, $blue, $green);
+          align-self: flex-end;
+        }
+
+        & > span {
+          position: absolute;
+          font-family: "Montserrat", sans-serif;
+          text-align: center;
+          transform: rotate(270deg);
+          white-space: nowrap;
+          font-weight: 700;
+          font-size: 14px;
+          color: $white;
+
+          @media (max-width: 768px) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &-percentage {
+        margin-top: 12px;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+
   &-team {
     grid-template: auto / 60% 1fr;
     grid-column-gap: 32px;

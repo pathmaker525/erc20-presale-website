@@ -144,7 +144,7 @@ export const TokenomicsItemContents = [
     percentage: 23,
   },
   {
-    title: "Ecosystem",
+    title: "Wallet",
     percentage: 30,
   },
 ]

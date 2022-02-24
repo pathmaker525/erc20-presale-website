@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
+  Header set Connection keep-alive
 
   RewriteEngine On
   RewriteBase /

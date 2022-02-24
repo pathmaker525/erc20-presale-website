@@ -20,7 +20,7 @@ const Footer = () => (
         </div>
 
         <div className="footer-main-links">
-          <span>About TUMA</span>
+          <span>Useful Links</span>
           <div className="flex-column">
             <a href="">Why a TUMA ICO?</a>
             <a href="">Whitepaper</a>
@@ -32,9 +32,7 @@ const Footer = () => (
 
         <div className="footer-main-follow">
           <span>Follow Us</span>
-          <p>
-            Looking cautiously round, to ascertain that they were not overheard
-          </p>
+          <p></p>
           <div className="flex">
             {SocialItemContents.map((data, index) => (
               <a key={index} href={data.link}>

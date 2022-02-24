@@ -19,15 +19,15 @@ export const AppRoutes = {
 
 export const SocialItemContents = [
   {
-    link: "",
+    link: "https://www.facebook.com/TumaToken",
     icon: <SiFacebook />,
   },
   {
-    link: "",
+    link: "https://twitter.com/TokenTuma",
     icon: <SiTwitter />,
   },
   {
-    link: "",
+    link: "https://t.me/tumatoken_official",
     icon: <SiTelegram />,
   },
 ]

@@ -217,10 +217,15 @@ const DashboardComponent = ({
       </div>
 
       <div className="dashboard-nfts flex">
-        <div className="dashboard-nfts-wrapper container">
-          <h2 className="flex">Buy NFTs that Changes Lives</h2>
-          <h3>Get privileges to support our cause.</h3>
-          <h3>Sales will be limited NFT purely African</h3>
+        <div className="dashboard-nfts-wrapper container flex">
+          <div className="dashboard-nfts-contents">
+            <h2 className="flex">Buy NFTs that Changes Lives</h2>
+            <h3>Get privileges to support our cause.</h3>
+            <h3>Sales will be limited NFT purely African</h3>
+          </div>
+          <NavLink className="rounded shadowed" to={AppRoutes.COMING_SOON}>
+            Coming Soon
+          </NavLink>
         </div>
       </div>
     </FadeIn>

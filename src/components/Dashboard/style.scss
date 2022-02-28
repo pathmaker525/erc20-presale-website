@@ -306,7 +306,7 @@
         margin: 16px 0 !important;
       }
 
-      & > button {
+      & > a {
         border: none;
         padding: 10px 16px;
         color: $black;
@@ -314,6 +314,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         font-size: 12px;
+        text-decoration: none;
         text-transform: uppercase;
       }
     }
@@ -325,12 +326,13 @@
     background-color: rgba($color: $black-dark, $alpha: 0.1);
 
     & > h2 {
+      margin-top: 64px;
       width: 100%;
       text-align: center;
     }
 
     &-wrapper {
-      padding: 32px 0 48px;
+      padding: 16px 0 96px;
       justify-content: center;
 
       &-main {

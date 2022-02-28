@@ -143,7 +143,9 @@ const DashboardComponent = ({
         <h2 className="flex">Documentation</h2>
         <div className="dashboard-documentation-wrapper">
           <h3>Download whitepaper</h3>
-          <button className="rounded shadowed">download</button>
+          <a href="/whitepaper.pdf" className="rounded shadowed" download>
+            download
+          </a>
         </div>
       </div>
 

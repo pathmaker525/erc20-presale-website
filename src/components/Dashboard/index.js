@@ -158,7 +158,7 @@ const DashboardComponent = ({
                 key={index}
                 className="dashboard-tokenomics-item flex-column"
               >
-                <div className="dashboard-tokenomics-item-progress flex">
+                <div className="dashboard-tokenomics-item-progress flex shadowed">
                   <div
                     className="dashboard-tokenomics-item-progress-bar rounded"
                     style={{ height: `${data.percentage}%` }}

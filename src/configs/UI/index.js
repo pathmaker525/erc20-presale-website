@@ -159,15 +159,15 @@ export const TeamItemContents = [
       icon: <SiGithub />,
     },
   },
-  {
-    image: LoganJackson,
-    name: "Logan Jackson",
-    role: "Co-Founder, TUMA Inc.",
-    social: {
-      link: "https://github.com/CoryITpro",
-      icon: <SiGithub />,
-    },
-  },
+  // {
+  //   image: LoganJackson,
+  //   name: "Logan Jackson",
+  //   role: "Co-Founder, TUMA Inc.",
+  //   social: {
+  //     link: "https://github.com/CoryITpro",
+  //     icon: <SiGithub />,
+  //   },
+  // },
   {
     image: FounderPlaceholder,
     name: "Billy Rose",
@@ -178,36 +178,9 @@ export const TeamItemContents = [
     },
   },
   {
-    image: FounderPlaceholder,
-    name: "Aiden McBride",
-    role: "VP of Business Development",
-    social: {
-      link: "",
-      icon: <SiGithub />,
-    },
-  },
-  {
     image: RussiaNguimbi,
     name: "Russia Nguimbi",
     role: "Chief Operating Officer",
-    social: {
-      link: "",
-      icon: <SiGithub />,
-    },
-  },
-  {
-    image: FounderPlaceholder,
-    name: "Jessie Adams",
-    role: "Chief Legal Officer",
-    social: {
-      link: "",
-      icon: <SiGithub />,
-    },
-  },
-  {
-    image: FounderPlaceholder,
-    name: "Martha Gilbert",
-    role: "Chief Legal Officer",
     social: {
       link: "",
       icon: <SiGithub />,

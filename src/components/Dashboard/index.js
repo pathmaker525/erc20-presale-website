@@ -6,13 +6,11 @@ import { HiOutlineAtSymbol } from "react-icons/hi"
 import Hero from "./Hero"
 import PartnerItem from "./PartnerItem"
 import FounderItem from "./FounderItem"
-import HireItem from "./HireItem"
 import AboutItem from "./AboutItem"
 
 import {
   AboutItemContents,
   TeamItemContents,
-  HireItemContents,
   PartnerItemContents,
   AppRoutes,
   RoadmapItemContents,
@@ -174,7 +172,7 @@ const DashboardComponent = ({
         </div>
       </div>
 
-      <div className="dashboard-team container grid">
+      <div className="dashboard-team container">
         <div className="dashboard-team-founders">
           <h2 className="flex">Awesome Team</h2>
           <div className="dashboard-team-founders-wrapper grid">
@@ -185,19 +183,6 @@ const DashboardComponent = ({
                 name={data.name}
                 role={data.role}
                 social={data.social}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="dashboard-team-hire">
-          <h2 className="flex">Vacancies</h2>
-          <div className="dashboard-team-hire-wrapper">
-            {HireItemContents.map((data, index) => (
-              <HireItem
-                key={index}
-                location={data.location}
-                role={data.role}
-                link={data.link}
               />
             ))}
           </div>

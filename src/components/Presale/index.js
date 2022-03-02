@@ -1,3 +1,5 @@
+import FadeIn from "react-fade-in/lib/FadeIn"
+
 import { makeUnified } from "utils"
 
 import "./style.scss"
@@ -31,7 +33,7 @@ const PresaleComponent = ({
   onWithdrawBaseHandler = () => {},
 }) => (
   <div className="presale flex">
-    <div className="presale-wrapper container flex">
+    <FadeIn className="presale-wrapper container flex">
       <div className="presale-main flex-column rounded shadowed">
         <div className="divider flex flex-column">
           <p className="rounded">Token Information</p>
@@ -313,7 +315,7 @@ const PresaleComponent = ({
           </div>
         )}
       </div>
-    </div>
+    </FadeIn>
   </div>
 )
 

@@ -9,6 +9,12 @@
   &-wrapper {
     justify-content: center;
     padding: 48px 0 96px;
+
+    & > div {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   &-main {

@@ -153,34 +153,25 @@ export const TeamItemContents = [
   {
     image: RocilFortune,
     name: "Rocil Fortuné A MALANDA",
-    role: "Co-Founder, TUMA Inc.",
+    role: "Founder, TUMA Inc.",
     social: {
       link: "",
       icon: <SiGithub />,
     },
   },
-  // {
-  //   image: LoganJackson,
-  //   name: "Logan Jackson",
-  //   role: "Co-Founder, TUMA Inc.",
-  //   social: {
-  //     link: "https://github.com/CoryITpro",
-  //     icon: <SiGithub />,
-  //   },
-  // },
   {
-    image: FounderPlaceholder,
-    name: "Billy Rose",
+    image: LoganJackson,
+    name: "Logan Jackson",
     role: "Head of Development and Programming",
     social: {
-      link: "",
+      link: "https://github.com/CoryITpro",
       icon: <SiGithub />,
     },
   },
   {
     image: RussiaNguimbi,
     name: "Russia Nguimbi",
-    role: "Chief Operating Officer",
+    role: "Chief Financial Officer",
     social: {
       link: "",
       icon: <SiGithub />,

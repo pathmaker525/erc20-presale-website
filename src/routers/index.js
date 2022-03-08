@@ -11,6 +11,7 @@ import ComingSoon from "components/ComingSoon"
 
 import Dashboard from "./Dashboard"
 import Presale from "./Presale"
+import FAQ from "./FAQ"
 
 import UseScrollToTop from "hooks/useScrollToTop"
 
@@ -24,6 +25,7 @@ const AppRouter = () => {
   let routes = useRoutes([
     { path: AppRoutes.HOME, element: <Dashboard /> },
     { path: AppRoutes.PRESALE, element: <Presale /> },
+    { path: AppRoutes.FAQS, element: <FAQ /> },
     { path: AppRoutes.COMING_SOON, element: <ComingSoon /> },
     { path: AppRoutes.NOT_FOUND, element: <NotFound /> },
   ])

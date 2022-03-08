@@ -9,8 +9,8 @@ import { SiGithub, SiFacebook, SiTwitter, SiTelegram } from "react-icons/si"
 export const AppRoutes = {
   HOME: "/",
   PRESALE: "/presale",
-  NFT: "/nft",
-  WALLET: "/wallet",
+  // NFT: "/nft",
+  // WALLET: "/wallet",
   DOCS: "/docs",
   FAQS: "/faqs",
   NOT_FOUND: "*",
@@ -227,5 +227,32 @@ export const PartnerItemContents = [
     image: PartnerPlaceholder,
     name: "Creative",
     location: "Saint Vincent and the Grenadines",
+  },
+]
+
+export const FAQItemContents = [
+  {
+    question: "What is Tuma Inc?",
+    answer:
+      "Tuma Inc is a new finance company that aims to democratize finance making it accessible to everyone.",
+  },
+  {
+    question: "Why the Tuma token?",
+    answer:
+      "The Tuma token will facilitate transactions at the cryptocurrency level at low fees given the context of rising costs in Africa at the level of this market.",
+  },
+  {
+    question: "Who is the founder?",
+    answer:
+      "The Founder of the project is Rocil Fortuné MALANDA, an entrepreneur and investor in the financial markets.",
+  },
+  {
+    question: "How to reach to the founder?",
+    answer: "Contact Rocil on Rocilf@yahoo.com.",
+  },
+  {
+    question: "Is Tuma a SCAM?",
+    answer:
+      "Tuma Inc is a company with a big plan and very serious goals for the African continent. Our team will always be at your disposal for any questions and will communicate on the financial statements and updates concerning the project.",
   },
 ]

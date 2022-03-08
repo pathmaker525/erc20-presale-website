@@ -189,7 +189,7 @@ const DashboardComponent = ({
         </div>
       </div>
 
-      <div className="dashboard-partners container">
+      {/* <div className="dashboard-partners container">
         <h2 className="flex">Making an Impact with the Right Partners</h2>
         <div className="dashboard-partners-wrapper grid">
           {PartnerItemContents.map((data, index) => (
@@ -201,7 +201,7 @@ const DashboardComponent = ({
             />
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className="dashboard-nfts flex">
         <div className="dashboard-nfts-wrapper container flex">

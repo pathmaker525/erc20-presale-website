@@ -11,7 +11,7 @@ export const AppRoutes = {
   PRESALE: "/presale",
   // NFT: "/nft",
   // WALLET: "/wallet",
-  DOCS: "/docs",
+  // DOCS: "/docs",
   FAQS: "/faqs",
   NOT_FOUND: "*",
   COMING_SOON: "/coming-soon",
